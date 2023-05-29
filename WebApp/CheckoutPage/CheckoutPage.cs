@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,6 +40,8 @@ namespace Web_Shop_Automation
         }
         public int CheckoutVerify()
         {
+            WebDriverWait wait = new WebDriverWait(driver,TimeSpan.FromSeconds(6));
+            wait.Until(driver => driver.FindElement(OrderNum));
             string str = driver.FindElement(OrderNum).Text;
             driver.FindElement(ordersBtn).Click();
             int orderNumAtOrderPage = Convert.ToInt32(str.Substring(14, 7));

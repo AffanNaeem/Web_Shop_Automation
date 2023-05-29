@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,9 @@ namespace Web_Shop_Automation
         }
         public int CurrCartQuantity()
         {
+            WebDriverWait wait = new WebDriverWait(CorePage.driver, TimeSpan.FromSeconds(6));
+            wait.Until(driver => driver.FindElement(cartQtyBtn));
+
             String txt1 = CorePage.driver.FindElement(cartQtyBtn).Text;
             int totalitemsincart = Convert.ToInt32(txt1.Substring(1, txt1.Length - 2));
             return totalitemsincart;
