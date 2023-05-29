@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Automation>
+	<Execution>
+		<LoginWithValidUserValidPass_TC001>
+			<url>https://demowebshop.tricentis.com/</url>
+			<username>affannaeem1@gmail.com</username>
+			<password>affan222001</password>
+		</LoginWithValidUserValidPass_TC001>
+		<LoginWithValidUserValidPass_TC001>
+			<url>https://demowebshop.tricentis.com/</url>
+			<username>affannaeem11@gmail.com</username>
+			<password>affan2222001</password>
+		</LoginWithValidUserValidPass_TC001>
+		<LoginWithInvalidUserInvalidPass_TC002>
+			<url>https://demowebshop.tricentis.com/</url>
+			<username>affannaeem11@gmail.com</username>
+			<password>affan2222001</password>
+		</LoginWithInvalidUserInvalidPass_TC002>
+		<SearchAndAddBookItem_TC002>
+			<url>https://demowebshop.tricentis.com/</url>
+			<username>affannaeem1@gmail.com</username>
+			<password>affan222001</password>
+			<search>Fiction</search>
+		</SearchAndAddBookItem_TC002>
+		<PlaceOrder_TC001>
+			<url>https://demowebshop.tricentis.com/</url>
+			<username>affannaeem1@gmail.com</username>
+			<password>affan222001</password>
+			<search>Fiction</search>
+			<finalurl>https://demowebshop.tricentis.com/onepagecheckout</finalurl>
+		</PlaceOrder_TC001>
+		<CheckoutOrder_TC001>
+			<url>https://demowebshop.tricentis.com/</url>
+			<username>affannaeem1@gmail.com</username>
+			<password>affan222001</password>
+			<search>Fiction</search>
+			<finalmsg>Your order has been successfully processed!</finalmsg>
+		</CheckoutOrder_TC001>
+	</Execution>
+</Automation>
